@@ -7,7 +7,7 @@ Static HTML/CSS/JS multi-geo e-commerce site for Cash On Delivery campaigns (Met
 ## Quick facts
 
 - **Domain**: gadgetroomhub.com
-- **Company**: Vicequattrostrade Srl — Via Giosuè Carducci, 30, 28838 Stresa, Italy
+- **Company**: WHATECH MOBILE CO., LIMITED — Room 505, 5th floor, Beverley Commercial Centre, 87-105 Chatham Road South, Hong Kong
 - **Contact email**: info@gadgetroomhub.com (auto-derived from domain)
 - **First product**: HyperTrimmer™ 3000 (slug: `hypertrimmer`) — battery-powered grass trimmer
 - **Geos active**: 18 (it, es, fr, de, pt, gr, bg, ro, cz, pl, ee, lv, lt, hr, hu, si, sk, en)
@@ -143,6 +143,6 @@ Then add the product card to each `[geo]/index.html` and the URLs to `sitemap.xm
 
 ## License & ownership
 
-© 2026 Vicequattrostrade Srl — All rights reserved.
+© 2026 WHATECH MOBILE CO., LIMITED — All rights reserved.
 
 Generated with the Landing Factory multi-geo static template.

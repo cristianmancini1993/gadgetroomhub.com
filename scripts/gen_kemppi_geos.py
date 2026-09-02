@@ -839,12 +839,13 @@ LANDING_TMPL = """<!DOCTYPE html>
 <html lang="{lang}">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18360728507"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18421446541"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
 
+  gtag('config', 'AW-18421446541');
   gtag('config', 'AW-18360728507');
 </script>
 <meta charset="UTF-8">
@@ -1125,15 +1126,15 @@ window.SITE_CONFIG = {{
       <div>
         <h4 class="site-footer__heading">{contacts}</h4>
         <ul class="site-footer__list">
-          <li><strong>Vicequattrostrade Srl</strong></li>
-          <li>Via Giosuè Carducci, 30</li>
-          <li>28838 Stresa, Italy</li>
+          <li><strong>WHATECH MOBILE CO., LIMITED</strong></li>
+          <li>Room 505, 5th floor, Beverley Commercial Centre</li>
+          <li>87-105 Chatham Road South, Hong Kong</li>
           <li><a href="mailto:info@gadgetroomhub.com">info@gadgetroomhub.com</a></li>
         </ul>
       </div>
     </div>
     <div class="site-footer__bottom">
-      © <span data-year>2026</span> <strong>Vicequattrostrade Srl</strong> — {rights}.
+      © <span data-year>2026</span> <strong>WHATECH MOBILE CO., LIMITED</strong> — {rights}.
       <a href="/">gadgetroomhub.com</a>
     </div>
   </div>

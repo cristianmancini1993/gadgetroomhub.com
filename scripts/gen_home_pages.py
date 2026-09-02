@@ -48,11 +48,12 @@ CTA = {
 }
 
 GTAG = """<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18360728507"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18421446541"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'AW-18421446541');
   gtag('config', 'AW-18360728507');
 </script>"""
 
@@ -302,7 +303,7 @@ def render_home(geo: str) -> str:
   "url": "{url}",
   "publisher": {{
     "@type": "Organization",
-    "name": "Vicequattrostrade Srl",
+    "name": "WHATECH MOBILE CO., LIMITED",
     "url": "https://gadgetroomhub.com/"
   }}
 }}
