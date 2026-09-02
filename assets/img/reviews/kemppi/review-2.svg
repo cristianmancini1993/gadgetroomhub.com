@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#eef2f6"/>
+  <rect x="180" y="180" width="440" height="320" rx="20" fill="#1e293b"/>
+  <rect x="210" y="210" width="180" height="100" rx="10" fill="#38bdf8"/>
+  <circle cx="520" cy="260" r="36" fill="#e2231a"/>
+  <text x="400" y="580" text-anchor="middle" font-family="Poppins,Segoe UI,sans-serif" font-size="28" font-weight="700" fill="#14181f">Customer photo 2</text>
+</svg>
