@@ -30,13 +30,13 @@
     {
       "slug": "mini-saw",
       "category": "Giardinaggio",
-      "title": "Saw 3000X",
+      "title": "MiniSawX",
       "desc": "Motosega elettrica telescopica. Taglia i rami a 5 metri e il legno fino a 35 cm, senza scala e senza benzina. 2 batterie 48 V.",
       "price_old": "196,00",
       "price_new": "59,00",
       "currency": "€",
-      "image": "/assets/img/products/saw3000x/hero.webp",
-      "image_alt": "Saw 3000X — motosega elettrica telescopica",
+      "image": "/assets/img/products/saw3000x/hero.webp?v=20260905",
+      "image_alt": "MiniSawX — motosega elettrica telescopica",
       "cta": "Scopri di più →"
     }
   ],
