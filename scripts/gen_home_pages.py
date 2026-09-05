@@ -22,7 +22,7 @@ HREFLANG = {
 }
 
 FAMILY_ORDER = [
-    "hypertrimmer", "glacierair", "fold360", "orvyn", "kemppi",
+    "hypertrimmer", "mini-saw", "glacierair", "fold360", "orvyn", "kemppi",
     "steamix", "sprayvex", "signalix",
 ]
 
