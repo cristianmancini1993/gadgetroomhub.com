@@ -38,6 +38,18 @@
       "image": "/assets/img/products/saw3000x/hero.webp?v=20260905",
       "image_alt": "MiniSawX — motosega elettrica telescopica",
       "cta": "Scopri di più →"
+    },
+    {
+      "slug": "grass-trimmer",
+      "category": "Giardinaggio",
+      "title": "Trim 9000X",
+      "desc": "Decespugliatore brushless con 2 batterie. Taglia, rifila e sagoma 300 m² con una ricarica, senza benzina.",
+      "price_old": "200",
+      "price_new": "99",
+      "currency": "€",
+      "image": "/assets/img/products/trim9000x/hero.webp",
+      "image_alt": "Trim 9000X — decespugliatore brushless",
+      "cta": "Scopri di più →"
     }
   ],
   "why_us": {
