@@ -6,7 +6,6 @@
 (function () {
   const C = window.SITE_CONFIG || {};
   const CLICK_ID_KEYS = ['gclid', 'gbraid', 'wbraid'];
-  const DEFAULT_GOOGLE_ADS_SEND_TO = 'AW-18360728507/piRMCJP23tkcEOiR9rJE';
   const CASHBOLT_SUBMIT_SESSION_KEY = 'df_cashbolt_submit';
 
   function getURLParam(name) {
@@ -215,41 +214,7 @@
       return false;
     }
 
-    if (!window.gtag) return false;
-
-    const T = getTrackingContext();
-    const p = new URLSearchParams(window.location.search);
-    const transactionId = p.get('order_id') || p.get('transaction_id') || p.get('tid')
-      || T.subid || T.campaign_id || ('df_' + Date.now());
-    const dedupeKey = 'df_gads_conv_' + transactionId;
-
-    try {
-      if (localStorage.getItem(dedupeKey) === '1') return false;
-      localStorage.setItem(dedupeKey, '1');
-    } catch (e) {
-      // ignore
-    }
-
-    const sendTo = options.send_to || cfg.GOOGLE_ADS_CONVERSION_SEND_TO || DEFAULT_GOOGLE_ADS_SEND_TO;
-    const payload = {
-      send_to: sendTo,
-      value: options.value != null ? options.value : (cfg.CONVERSION_VALUE != null ? cfg.CONVERSION_VALUE : 1.0),
-      currency: options.currency || cfg.CONVERSION_CURRENCY || cfg.CURRENCY || 'EUR',
-      transaction_id: transactionId,
-      campaign_id: T.campaign_id || '',
-      subid: T.subid || T.campaign_id || '',
-      utm_campaign: p.get('utm_campaign') || T.utm_campaign || T.campaign_id || '',
-      utm_source: p.get('utm_source') || T.utm_source || '',
-      utm_medium: p.get('utm_medium') || T.utm_medium || '',
-      utm_term: p.get('utm_term') || T.utm_term || '',
-      utm_content: p.get('utm_content') || T.utm_content || '',
-    };
-
-    if (T.gclid) payload.gclid = T.gclid;
-    if (T.gbraid) payload.gbraid = T.gbraid;
-    if (T.wbraid) payload.wbraid = T.wbraid;
-
-    window.gtag('event', 'conversion', payload);
+    // Google Ads Acquisto is fired by the official snippet in thank-you <head>.
     clearCashboltSubmitMarkers();
     return true;
   };

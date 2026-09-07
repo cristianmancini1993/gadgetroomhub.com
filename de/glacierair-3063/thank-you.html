@@ -10,6 +10,14 @@
 
   gtag('config', 'AW-18421446541');
 </script>
+<!-- Event snippet for Acquisto conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18421446541/NwLsCNDM2ewcEI3vg9BE',
+      'transaction_id': ''
+      // 'new_customer': true /* calculate dynamically, populate with true/false */,
+  });
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bestellung eingegangen — Bitte auf den Bestätigungsanruf warten | GlacierAir™</title>
@@ -312,37 +320,6 @@ window.addEventListener('load', function () {
   </div>
   <div class="site-footer__bottom">© <span data-year>2026</span> <strong>WHATECH MOBILE CO., LIMITED</strong> — Alle Rechte vorbehalten. <a href="/">gadgetroomhub.com</a></div>
 </div></footer>
-
-<!-- Google Ads Purchase conversion — value = CPA/CPL EUR for offer #3063 -->
-<!-- Event snippet for Purchase conversion page -->
-<script>
-  (function () {
-    var p = new URLSearchParams(window.location.search);
-
-    function stored(name) {
-      try { return window.localStorage.getItem('df_' + name) || ''; }
-      catch (e) { return ''; }
-    }
-
-    var campaignId = p.get('campaign_id') || p.get('utm_campaign') || p.get('campaignid') || p.get('subid') || stored('campaign_id') || stored('utm_campaign') || stored('subid') || '';
-    var subid = p.get('subid') || campaignId || stored('subid') || '';
-    var transactionId = p.get('order_id') || p.get('transaction_id') || p.get('tid') || subid || '';
-
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18360728507/piRMCJP23tkcEOiR9rJE',
-      'value': 16.0,
-      'currency': 'EUR',
-      'transaction_id': transactionId,
-      'campaign_id': campaignId,
-      'subid': subid,
-      'utm_campaign': p.get('utm_campaign') || campaignId,
-      'utm_source': p.get('utm_source') || stored('utm_source') || '',
-      'utm_medium': p.get('utm_medium') || stored('utm_medium') || '',
-      'utm_term': p.get('utm_term') || stored('utm_term') || '',
-      'utm_content': p.get('utm_content') || stored('utm_content') || ''
-    });
-  })();
-</script>
 
 </body>
 </html>
