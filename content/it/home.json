@@ -50,6 +50,18 @@
       "image": "/assets/img/products/trim9000x/hero.webp",
       "image_alt": "Trimmer T9X™ — decespugliatore brushless",
       "cta": "Scopri di più →"
+    },
+    {
+      "slug": "portable-dryer",
+      "category": "Casa",
+      "title": "SonicDry™",
+      "desc": "Asciugatrice portatile 3 in 1. Asciuga, disinfetta e stira fino a 25 kg, classe A+++, senza umidità in casa.",
+      "price_old": "267",
+      "price_new": "79",
+      "currency": "€",
+      "image": "/assets/img/products/sonicdry/hero.webp",
+      "image_alt": "SonicDry™ — asciugatrice portatile 3 in 1",
+      "cta": "Scopri di più →"
     }
   ],
   "why_us": {
