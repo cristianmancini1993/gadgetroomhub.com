@@ -213,6 +213,13 @@ html, body {
     justify-content: center;
   }
 
+  .trim-badge {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .trim-hero h1 {
     font-size: 34px;
   }
