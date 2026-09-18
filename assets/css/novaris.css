@@ -1097,7 +1097,7 @@ border-radius:16px;box-shadow:0 16px 32px rgba(0,126,65,0.32);transition:all .2s
 html, body {
   overflow-x: hidden;
 }
-body.trimmer-9999x {
+body.novaris {
   font-family: Arial, Helvetica, sans-serif;
   background: #fff;
   color: #151515;
@@ -1180,7 +1180,7 @@ body.trimmer-9999x {
   .tx-form-section { padding: 0 16px; }
 }
 
-.trimmer-9999x .site-footer {
+.novaris .site-footer {
   margin-top: 0;
 }
 
