@@ -1897,3 +1897,32 @@ body.vantera {
     letter-spacing: 0.08em;
   }
 }
+
+/* ---- prezzi: numero e valuta sempre sulla stessa riga ---- */
+.c4x-price-row {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.c4x-new-price,
+.c4x-old-price {
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .c4x-price-top {
+    gap: 10px;
+  }
+
+  .c4x-price-row {
+    gap: 8px;
+  }
+
+  .c4x-new-price {
+    font-size: clamp(22px, 7.2vw, 48px);
+  }
+
+  .c4x-old-price {
+    font-size: clamp(14px, 4.2vw, 28px);
+  }
+}
