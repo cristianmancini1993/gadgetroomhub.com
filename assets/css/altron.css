@@ -2058,3 +2058,25 @@ body.altron {
     order: 4;
   }
 }
+
+/* ---- scorte: l'etichetta va sotto la barra, leggibile, con gli spazi al posto giusto
+   (dentro un contenitore flex gli spazi fra testo e numero sparivano) ---- */
+.c4x-stock-bar-label {
+  position: static;
+  inset: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.34em;
+  margin-top: 10px;
+  padding: 0;
+  color: #b42318;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.c4x-stock-bar-label span {
+  font-size: 1.35em;
+  line-height: 1;
+}
