@@ -1910,24 +1910,42 @@ body.vytron {
 }
 
 @media (max-width: 560px) {
-  /* il badge dello sconto va su una riga sua: così il prezzo può essere grande */
+  /* badge, prezzo e prezzo barrato tutti sulla stessa riga */
   .c4x-price-top {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
     gap: 8px;
   }
 
   .c4x-price-row {
-    gap: 10px;
+    gap: 8px;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 
+  .c4x-sale-badge {
+    font-size: 13px;
+    padding: 6px 10px;
+    flex: 0 0 auto;
+  }
+
   .c4x-new-price {
-    font-size: clamp(30px, 8.6vw, 52px);
+    font-size: clamp(28px, 9.1vw, 52px);
   }
 
   .c4x-old-price {
-    font-size: clamp(17px, 5vw, 30px);
+    font-size: clamp(16px, 4.6vw, 30px);
+  }
+
+  /* l'ungherese ha i prezzi più lunghi: stessa riga, corpo un filo più piccolo */
+  html[lang="hu"] .c4x-new-price {
+    font-size: clamp(20px, 7vw, 44px);
+  }
+
+  html[lang="hu"] .c4x-old-price {
+    font-size: clamp(13px, 3.6vw, 26px);
   }
 }
 
