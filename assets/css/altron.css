@@ -1910,19 +1910,133 @@ body.altron {
 }
 
 @media (max-width: 560px) {
+  /* il badge dello sconto va su una riga sua: così il prezzo può essere grande */
   .c4x-price-top {
-    gap: 10px;
-  }
-
-  .c4x-price-row {
+    flex-direction: column;
+    align-items: center;
     gap: 8px;
   }
 
+  .c4x-price-row {
+    gap: 10px;
+    justify-content: center;
+  }
+
   .c4x-new-price {
-    font-size: clamp(22px, 7.2vw, 48px);
+    font-size: clamp(30px, 8.6vw, 52px);
   }
 
   .c4x-old-price {
-    font-size: clamp(14px, 4.2vw, 28px);
+    font-size: clamp(17px, 5vw, 30px);
+  }
+}
+
+/* il riquadro del prezzo non deve toccare la foto */
+@media (max-width: 900px) {
+  .trim-hero__image.mobile-only {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* ---- sezioni problema e meccanismo: titolo, immagine, testo, pulsante ---- */
+.problem-wrap,
+.t77bx-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 860px;
+}
+
+.problem-head,
+.t77bx-head {
+  order: 1;
+  max-width: 100%;
+}
+
+.problem-head h2,
+.t77bx-head h2 {
+  margin-bottom: 0;
+}
+
+.problem-image,
+.t77bx-media {
+  order: 2;
+  width: 100%;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.problem-content:not(.problem-head),
+.t77bx-body:not(.t77bx-head) {
+  order: 3;
+  max-width: 100%;
+}
+
+.problem-cta,
+.t77bx-cta {
+  order: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.problem-cta .t77bn-cta,
+.t77bx-cta .t77bn-cta {
+  width: auto;
+}
+
+@media (max-width: 900px) {
+  .problem-cta .t77bn-cta,
+  .t77bx-cta .t77bn-cta {
+    width: 100%;
+  }
+
+  /* benefici: titolo, immagine, testo */
+  .t77bn-c {
+    display: contents;
+  }
+
+  .t77bn-c .t77bn-ic {
+    order: 1;
+  }
+
+  .t77bn-c h3 {
+    order: 2;
+  }
+
+  .t77bn-row .t77bn-media,
+  .t77bn-row--rev .t77bn-media {
+    order: 3;
+  }
+
+  .t77bn-c p,
+  .t77bn-c .t77bn-hl {
+    order: 4;
+  }
+}
+
+/* ---- benefici su telefono: titolo, immagine, testo ---- */
+@media (max-width: 900px) {
+  .t77bn-c {
+    display: contents;
+  }
+
+  .t77bn-c .t77bn-ic {
+    order: 1;
+  }
+
+  .t77bn-c h3 {
+    order: 2;
+  }
+
+  .t77bn-row .t77bn-media,
+  .t77bn-row--rev .t77bn-media {
+    order: 3;
+  }
+
+  .t77bn-c p,
+  .t77bn-c .t77bn-hl {
+    order: 4;
   }
 }
