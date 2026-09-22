@@ -1468,8 +1468,9 @@ body.nexaro {
 
 .t77bx-chip {
   position: absolute;
-  top: 22px;
-  left: 22px;
+  /* in basso a destra: nella foto NEXARO l'angolo in alto a sinistra ha il logotipo stampato */
+  bottom: 22px;
+  right: 22px;
   background: #0b1410;
   color: #7df0a8;
   border: 1px solid rgba(125,240,168,0.42);
@@ -1626,7 +1627,7 @@ body.nexaro {
   .t77bx-lead { font-size: 16px; }
 
 
-  .t77bx-chip { top: 16px; left: 16px; font-size: 12px; }
+  .t77bx-chip { bottom: 16px; right: 16px; font-size: 12px; }
 }
 
 
